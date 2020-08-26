@@ -1,4 +1,11 @@
 # Node.js with Angular
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Visual Studio Professional Subscription(fe269779-e452-4cec-992c-cb8a1d5ac4ed)'
+    appType: 'webApp'
+    WebAppName: 'shopping-cart-app'
+    packageForLinux: 'dist/'
 # Build a Node.js project that uses Angular.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
